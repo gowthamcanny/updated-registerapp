@@ -1,0 +1,12 @@
+<resources>
+      <dimen name="fab_margin">16dp</dimen>
+    <dimen name="zerodp">0dp</dimen>
+    <dimen name="dim16">16dp</dimen>
+    <dimen name="dim8">8dp</dimen>
+    <dimen name="dim50">50dp</dimen>
+
+    <dimen name="text12sp">12sp</dimen>
+    <dimen name="text14sp">14sp</dimen>
+    <dimen name="text16sp">16sp</dimen>
+    <dimen name="text18sp">18sp</dimen>
+   </resources>

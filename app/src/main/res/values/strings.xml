@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Register</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="please_register_your_details">Create Your Profile</string>
+    <string name="number">Mobile No</string>
+    <string name="enter_your_number">Enter Your Number</string>
+    <string name="dob">DOB</string>
+    <string name="register">REGISTER</string>
+    <string name="enter_your_e_mail">Enter Your E-mail</string>
+    <string name="e_mail">E-mail</string>
+    <string name="my_profile">My Profile</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_list">Profile List</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="type_your_password">Type your Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="type_your_e_mail">Type your E-mail</string>
+    <string name="not_registered_yet_sign_up">Not Registered Yet Sign Up</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_registered_sign_in">Already Registered Sign-in</string>
+
+    <string name="number_error">Please Enter 10 digit number</string>
+    <string name="name_error">Please Enter name</string>
+    <string name="email_error">Please Enter Valid email</string>
+    <string name="please_create_a_profile">Please Create a profile</string>
+    <string name="log_out">LOG OUT</string>
+</resources>

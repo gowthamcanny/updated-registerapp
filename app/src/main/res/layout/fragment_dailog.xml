@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="negativeButton"
+            type="String" />
+
+        <variable
+            name="positiveButton"
+            type="String" />
+
+        <variable
+            name="emoji"
+            type="String" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/dim16">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_card_bg"
+            android:paddingBottom="@dimen/dim16">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="@dimen/dim50"
+                android:layout_height="@dimen/dim50"
+                android:layout_marginTop="@dimen/dim16"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/positive_emoji" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="@dimen/zerodp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim16"
+                android:layout_marginTop="@dimen/dim8"
+                android:ellipsize="end"
+                android:fontFamily="@font/josefinsans_regular"
+                android:gravity="center"
+                android:text="@{message}"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgLogo"
+                tools:text="Post is Created Successfully" />
+
+            <TextView
+                android:id="@+id/tvNegative"
+                android:layout_width="140dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="@dimen/dim16"
+                android:layout_marginEnd="@dimen/dim8"
+                android:fontFamily="@font/josefinsans_bold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dim8"
+                android:text="@{negativeButton}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text12sp"
+                android:visibility="@{negativeButton.isEmpty() ? View.GONE: View.VISIBLE}"
+                app:layout_constraintEnd_toStartOf="@id/tvPositive"
+                app:layout_constraintStart_toStartOf="@+id/tvDescription"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                tools:text="okay" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="@dimen/dim16"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dim16"
+                app:constraint_referenced_ids="tvNegative,tvPositive"
+                app:layout_constraintEnd_toStartOf="@id/tvPositive"
+                app:layout_constraintStart_toEndOf="@id/tvNegative"
+                app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+            <TextView
+                android:id="@+id/tvPositive"
+                android:layout_width="140dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="@dimen/dim16"
+                android:fontFamily="@font/josefinsans_bold"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dim8"
+                android:text="@{positiveButton}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text12sp"
+                android:visibility="@{positiveButton.isEmpty() ? View.GONE: View.VISIBLE}"
+                app:layout_constraintEnd_toEndOf="@+id/tvDescription"
+                app:layout_constraintStart_toEndOf="@id/tvNegative"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                tools:text="Cancel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</layout>

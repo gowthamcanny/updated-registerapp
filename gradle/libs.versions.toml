@@ -1,0 +1,46 @@
+[versions]
+agp = "8.3.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+lifecycle = "2.6.1"
+viewmodel = "2.3.0-alpha04"
+retrofit2 = "2.7.1"
+gson = "2.8.6"
+convertergson = "2.5.0"
+okhttp = "2.7.5"
+okhttp3 = "4.9.1"
+navigationfragment = "2.3.5"
+navigationui = "2.3.5"
+glide = "4.12.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-livedata-ktx", name = "lifecycle", version.ref = "lifecycle" }
+androidx-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", name = "lifecycle", version.ref = "viewmodel" }
+androidx-retrofit2 = { module = "com.squareup.retrofit2:retrofit", name = "lifecycle", version.ref = "retrofit2" }
+androidx-gson = { module = "com.google.code.gson:gson", name = "lifecycle", version.ref = "gson" }
+androidx-convertergson = { module = "com.squareup.retrofit2:converter-gson", name = "lifecycle", version.ref = "convertergson" }
+androidx-okhttp = { module = "com.squareup.okhttp:okhttp", name = "lifecycle", version.ref = "okhttp" }
+androidx-okhttp3 = { module = "com.squareup.okhttp3:okhttp", name = "lifecycle", version.ref = "okhttp3" }
+androidx-navigationfragment = { module = "androidx.navigation:navigation-fragment-ktx", name = "lifecycle", version.ref = "navigationfragment" }
+androidx-navigationui = { module = "androidx.navigation:navigation-ui-ktx", name = "lifecycle", version.ref = "navigationui" }
+androidx-glide = { module = "com.github.bumptech.glide:glide", name = "lifecycle", version.ref = "glide" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
